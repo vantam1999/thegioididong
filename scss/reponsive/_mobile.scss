@@ -1,0 +1,53 @@
+// <= 425px
+@media (max-width: 425px) {
+    //header
+    .header__brand {
+        padding: 5px;
+    }
+    .header__brand > div:first-child {
+        display: none;
+    }
+    .header__brand > div:last-child input {
+        width: 120px;
+    }
+    // carbar 
+    .carBar .carousel {
+        width: 100%;
+        padding-bottom: 10px;
+        height: auto;
+    }
+    .carBar .sidebar {
+        display: none;
+    }
+    .owl-carousel .owl-item img {
+        height: 137px;
+    }
+    .owl-carousel-page .owl-dots {
+        height: auto;
+    }
+    //product
+    .product__hotWeekend .product__img {
+        height: 225px;
+        & > img {
+            height: 100%;
+        }
+    }
+    .product__header {
+        padding: 5px;
+        & h3 {
+            font-size: 11px;
+        }
+    }
+    .product__header ol li a {
+        font-size: 11px;
+    }
+    .product__news {
+        width: 200px;
+    }
+    .product__list {
+        width: calc(100% - 200px);
+    }
+}
+@media (max-widh: 375px) {
+
+}

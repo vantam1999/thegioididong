@@ -1,0 +1,51 @@
+// from 425px to 1024px
+@media (max-width: 1024px) {
+    body {
+        font-size: 13px;
+    }
+    .header__menu a, .header__service a {
+        font-size: 11px;
+    }
+    .news__header--content .header__content--text a {
+        font-size: 12px;
+    }    
+    .news__header--title {
+        padding: 5px;
+    }
+    .news__header--title a {
+        font-size: 12px;
+    }
+    .news__header--content .header__content--text {
+        margin-left: 10px;
+    }
+    .carBar .carousel {
+        width: 600px;
+    }
+    .carBar .sidebar {
+        width: calc(100% - 600px);
+    }
+    .product__header ol li a,
+    .product__details > div {
+        font-size: 14px;
+    }
+    .product__details .product__condition {
+        font-size: 12px;
+    }
+    .product__news {
+        width: 450px;
+    }
+    .product__list {
+        width: calc(100% - 450px);
+    }
+    .product__news--img > img {
+        width: 450px;
+        height: 213px;
+    }
+    .header__brand > div:last-child input {
+        padding: 6px;
+        width: 165px;
+    }
+}
+@media (max-width: 768px) {
+
+}

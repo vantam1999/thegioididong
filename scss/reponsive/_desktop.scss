@@ -1,0 +1,32 @@
+// >= 1024px
+@media (min-width: 1400px) {
+
+}
+@media (max-width: 1399px) {
+
+}
+@media (max-width: 1366px) {
+
+}
+@media (max-width: 1224px) {
+    body {
+        font-size: 14px;
+    }
+    .header__menu a, .header__service a {
+        font-size: 12px;
+        padding: 0;
+    }
+    .carBar .carousel {
+        width: 675px;
+    }
+    .carBar .sidebar {
+        width: calc(100% - 675px);
+    }
+    .product__header ol li a,
+    .product__details > div {
+        font-size: 14px;
+    }
+    .product__details .product__condition {
+        font-size: 12px;
+    }
+}
