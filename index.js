@@ -4,6 +4,9 @@ var isBlock = false;
 var hidden = document.querySelector('.hidden');
 var more = document.querySelector('.more');
 var changeText = document.querySelector('.more a');
+var bars = document.querySelector('.btn__bars');
+var close = document.querySelector('.close');
+var mobileMenu = document.querySelector('.mobile__menu');
 
 window.onload = function () {
     // load page //
@@ -30,6 +33,12 @@ window.onload = function () {
             450: {
                 items: 1,                         
             },
+            600: {
+                items: 2,
+            },
+            850: {
+                items: 3,
+            },
             968:{
                 items:4,               
             },
@@ -42,6 +51,8 @@ window.onload = function () {
     more.addEventListener('click', ()=> {
         onMore();
     });
+    bars.addEventListener('click', activeShow);
+    close.addEventListener('click', activeHide);
 };
 function onMore() {
     if(isBlock) {
@@ -53,4 +64,12 @@ function onMore() {
         changeText.innerHTML = "Thu Gọn";
         isBlock = !isBlock;
     }
+}
+function activeShow() {
+    mobileMenu.classList.add('active__mobile--menu');
+    bars.style.display = "none";
+}
+function activeHide() {
+    mobileMenu.classList.remove('active__mobile--menu');
+    bars.style.display = "block";
 }
